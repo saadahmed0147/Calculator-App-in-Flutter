@@ -1,4 +1,4 @@
-import 'package:calculator/home.dart';
+import 'package:calculator/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,6 +15,9 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return const Home();
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: SplashScreen(),
+    );
   }
 }
